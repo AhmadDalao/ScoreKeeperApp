@@ -14,7 +14,7 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -25,6 +25,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="@string/teama"
+                android:textColor="@color/primary_text"
                 android:textSize="32sp" />
 
             <TextView
@@ -34,25 +35,31 @@
                 android:layout_margin="8dp"
                 android:gravity="center_horizontal"
                 android:text="@string/_0"
-                android:textColor="@android:color/black"
+                android:textColor="@color/secondary_text"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_margin="8dp"
+                android:background="@android:color/holo_blue_bright"
                 android:gravity="center_horizontal"
                 android:onClick="AddThreeTeamA"
+                android:padding="4dp"
                 android:text="@string/_3"
                 android:textSize="24sp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_margin="8dp"
+                android:background="@android:color/holo_blue_bright"
                 android:gravity="center_horizontal"
                 android:onClick="AddTwoTeamA"
+                android:padding="4dp"
                 android:text="@string/_2"
                 android:textSize="24sp" />
 
@@ -60,8 +67,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:background="@android:color/holo_blue_bright"
                 android:gravity="center_horizontal"
                 android:onClick="FreeThrowTeamA"
+                android:padding="4dp"
                 android:text="@string/freeShot"
                 android:textSize="24sp" />
 
@@ -72,6 +81,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="@string/Fouls"
+                android:textColor="@color/primary_text"
                 android:textSize="32sp" />
 
             <TextView
@@ -81,7 +91,7 @@
                 android:layout_margin="8dp"
                 android:gravity="center_horizontal"
                 android:text="@string/_0"
-                android:textColor="@android:color/black"
+                android:textColor="@color/secondary_text"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
@@ -89,8 +99,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:background="@android:color/holo_orange_dark"
                 android:gravity="center_horizontal"
                 android:onClick="AddFoulTeamA"
+                android:padding="4dp"
                 android:text="@string/AddFoul"
                 android:textAllCaps="false"
                 android:textSize="24sp" />
@@ -98,15 +110,15 @@
 
         <View
             android:layout_width="3dp"
-            android:layout_height="450dp"
-            android:background="@android:color/darker_gray"
+            android:layout_height="500dp"
+            android:background="@color/divider"
             android:foregroundGravity="center"
             android:gravity="center"
             android:paddingTop="16dp" />
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -117,6 +129,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="@string/teamB"
+                android:textColor="@color/primary_text"
                 android:textSize="32sp" />
 
             <TextView
@@ -126,7 +139,7 @@
                 android:layout_margin="8dp"
                 android:gravity="center_horizontal"
                 android:text="@string/_0"
-                android:textColor="@android:color/black"
+                android:textColor="@color/secondary_text"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
@@ -134,6 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:background="@android:color/holo_blue_bright"
                 android:gravity="center_horizontal"
                 android:onClick="AddThreeTeamB"
                 android:text="@string/_3"
@@ -143,8 +157,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:background="@android:color/holo_blue_bright"
                 android:gravity="center_horizontal"
                 android:onClick="AddTwoTeamB"
+                android:padding="4dp"
                 android:text="@string/_2"
                 android:textSize="24sp" />
 
@@ -152,8 +168,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:background="@android:color/holo_blue_bright"
                 android:gravity="center_horizontal"
                 android:onClick="FreeThrowTeamB"
+                android:padding="4dp"
                 android:text="@string/freeShot"
                 android:textSize="24sp" />
 
@@ -164,6 +182,7 @@
                 android:gravity="center_horizontal"
                 android:padding="4dp"
                 android:text="@string/FoulB"
+                android:textColor="@color/primary_text"
                 android:textSize="32sp" />
 
             <TextView
@@ -173,7 +192,7 @@
                 android:layout_margin="8dp"
                 android:gravity="center_horizontal"
                 android:text="@string/_0"
-                android:textColor="@android:color/black"
+                android:textColor="@color/secondary_text"
                 android:textSize="32sp"
                 android:textStyle="bold" />
 
@@ -181,20 +200,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:background="@android:color/holo_orange_dark"
                 android:gravity="center_horizontal"
                 android:onClick="AddFoulTeamB"
-                android:text="@string/AddFoul"
+                android:padding="4dp"
+                android:text="@string/AddFoulB"
                 android:textAllCaps="false"
                 android:textSize="24sp" />
         </LinearLayout>
     </LinearLayout>
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp"
+        android:background="@android:color/holo_orange_light"
         android:onClick="resetScore"
         android:padding="4dp"
         android:text="@string/reset" />
