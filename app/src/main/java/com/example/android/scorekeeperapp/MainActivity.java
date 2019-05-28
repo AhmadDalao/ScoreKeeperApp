@@ -21,15 +21,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetScore(View view) {
-        teamAScore = 0;
-        displayScoreTeamA(teamAScore);
-        teamBScore = 0;
-        displayScoreTeamB(teamBScore);
-        teamAFouls = 0;
-        displayFoulsTeamA(teamAFouls);
-        teamBFouls = 0;
-        displayFoulsTeamB(teamBFouls);
-
+        displayScoreTeamA(0);
+        displayScoreTeamB(0);
+        displayFoulsTeamA(0);
+        displayFoulsTeamB(0);
     }
 
     public void displayScoreTeamA(int scoreA) {
