@@ -10,7 +10,6 @@ public class MainActivity extends AppCompatActivity {
 
     int teamAScore = 0;
     int teamBScore = 0;
-
     int teamAFouls = 0;
     int teamBFouls = 0;
 
@@ -24,10 +23,14 @@ public class MainActivity extends AppCompatActivity {
     this method reset the score for both teams for 0 when the button reset is clicked on
      */
     public void resetScore(View view) {
-        displayScoreTeamA(0);
-        displayScoreTeamB(0);
-        displayFoulsTeamA(0);
-        displayFoulsTeamB(0);
+        teamAScore = 0;
+        teamBScore = 0;
+        teamAFouls = 0;
+        teamBFouls = 0;
+        displayScoreTeamA(teamAScore);
+        displayScoreTeamB(teamBScore);
+        displayFoulsTeamA(teamAFouls);
+        displayFoulsTeamB(teamBFouls);
     }
 
     /**
